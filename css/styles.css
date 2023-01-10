@@ -1,0 +1,78 @@
+body {
+  background: rgb(63, 94, 251);
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
+  background-size: 200% 400%;
+}
+h5 {
+  margin-top: 5px;
+}
+.page {
+  display: flex;
+  justify-content: center;
+}
+.card-page {
+  background-color: rgb(30, 36, 41);
+  color: rgb(255, 255, 255);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 100rem;
+  max-width: 95%;
+  min-height: 95%;
+}
+@keyframes move {
+  100% {
+    transform: translate3d(0, 0, 1px) rotate(360deg);
+  }
+}
+
+.moving-ball {
+  width: 20vmin;
+  height: 20vmin;
+  border-radius: 20vmin;
+  backface-visibility: hidden;
+  position: absolute;
+  animation: move;
+  animation-duration: 26;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.moving-ball:nth-child(0) {
+  color: #583c87;
+  animation-duration: 173s;
+  animation-delay: -113s;
+  transform-origin: 19vw 17vh;
+  box-shadow: -40vmin 0 5.066537564551652vmin currentColor;
+}
+.moving-ball:nth-child(1) {
+  color: #ffacac;
+  animation-duration: 55s;
+  animation-delay: -177s;
+  transform-origin: 10vw 23vh;
+  box-shadow: -40vmin 0 5.718966373144347vmin currentColor;
+}
+.moving-ball:nth-child(2) {
+  color: #ffacac;
+  animation-duration: 111s;
+  animation-delay: -95s;
+  transform-origin: -13vw -19vh;
+  box-shadow: -40vmin 0 5.278883148004583vmin currentColor;
+}
+.moving-ball:nth-child(3) {
+  color: #583c87;
+  animation-duration: 67s;
+  animation-delay: -135s;
+  transform-origin: -11vw 23vh;
+  box-shadow: 40vmin 0 5.844720251973912vmin currentColor;
+}
+.moving-ball:nth-child(4) {
+  color: #e45a84;
+  animation-duration: 81s;
+  animation-delay: -141s;
+  transform-origin: 5vw -2vh;
+  box-shadow: 40vmin 0 5.218124418358206vmin currentColor;
+}

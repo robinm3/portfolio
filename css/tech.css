@@ -1,0 +1,55 @@
+body {
+  background: linear-gradient(-45deg, #fffd93, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 100% 400%;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes move {
+  from {
+    top: 0;
+  }
+
+  to {
+    bottom: 0;
+  }
+}
+
+.moving-star {
+  color: #e2e19c;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  backface-visibility: hidden;
+  position: absolute;
+  animation: move;
+  animation-duration: 26;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+h5 {
+  margin-top: 5px;
+}
+.page {
+  display: flex;
+  justify-content: center;
+}
+.card-page {
+  background-color: rgb(58, 214, 241);
+  color: rgb(255, 255, 255);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 100rem;
+  max-width: 95%;
+  min-height: 95%;
+}
