@@ -12,7 +12,7 @@ const theme = deepMerge(grommet, {
       brand: '#11AA7F'
     },
     font: {
-      family: "Roboto",
+      family: "cursive",
       size: "18px",
       height: "20px",
     },
@@ -98,27 +98,19 @@ function App() {
               <LinkTemplate href={"https://www.linkedin.com/in/marc-antoine-robin"} linkToLogo="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F1000logos.net%2Fwp-content%2Fuploads%2F2017%2F03%2FColor-of-the-LinkedIn-Logo.jpg&f=1&nofb=1&ipt=3574f9f820310ae8c775b941ba57b718f37cf2754bfd6719684f04e810479a88&ipo=images" />
             </Box>
           </CardTemplate>
-          {/* <CardTemplate >
-            <Box direction='row' justify='evenly' style={flexwrap}>
-              <Skill title='TypeScript' value={90} />
-              <Skill title='Java' value={70} />
-              <Skill title='Python' value={75} />
-            </Box>
-          </CardTemplate> */}
           <CardTemplate >
             <Box direction='row-responsive' justify='evenly' >
               <Image
                 src="https://aeglo.ift.ulaval.ca/executives/finissant.jpeg"
-                width="400rem"
+                width="360rem"
                 margin="small"
               />
-              <Box width="medium">
-                <Paragraph size='large'
+              <Box width="medium" direction='column' justify='center'>
+                <Paragraph size='xxlarge'
                   margin="small">
-                  Finissant en génie logiciel à l'université laval, avec de l'expérience en grosses comme en petites entreprises.
+                  Finissant en génie logiciel, développeur fullstack et artiste amateur.
                 </Paragraph>
               </Box>
-
             </Box>
           </CardTemplate>
         </PageContent>
