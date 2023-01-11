@@ -78,6 +78,8 @@ function App() {
 
   return (
     <Grommet theme={theme} themeMode={dark ? "dark" : 'light'} full>
+      <Image className='moving' src='https://cdn-icons-png.flaticon.com/512/1913/1913288.png' ></Image>
+      <Image className='moving' src='https://cdn-icons-png.flaticon.com/512/870/870194.png' ></Image>
       <Page>
         <AppBar>
           <Text size='large'>
