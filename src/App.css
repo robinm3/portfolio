@@ -1,8 +1,10 @@
 body {
   overflow: hidden;
+  width: 100%;
 }
 
 .App {
+  overflow: hidden;
   text-align: center;
 }
 
@@ -30,6 +32,11 @@ body {
 
 .App-link {
   color: #61dafb;
+}
+
+.image {
+  max-width: 90%;
+  width: 30rem;
 }
 
 @keyframes App-logo-spin {
@@ -72,6 +79,7 @@ body {
   z-index: 0;
   width: 8rem;
 }
+
 
 
 .moving:nth-child(1) {
