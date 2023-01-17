@@ -39,6 +39,10 @@ body {
   width: 30rem;
 }
 
+.block {
+  margin-bottom: 3rem;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -48,7 +52,6 @@ body {
     transform: rotate(360deg);
   }
 }
-
 
 @keyframes roundMove {
   0% {
@@ -79,8 +82,6 @@ body {
   z-index: 0;
   width: 8rem;
 }
-
-
 
 .moving:nth-child(1) {
   animation: roundMove2 60s infinite linear;
